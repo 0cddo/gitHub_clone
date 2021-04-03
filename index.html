@@ -42,6 +42,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/main_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/main_small.css">
+
 </head>
 
 <body>
@@ -55,7 +58,7 @@
                     <div class="logo">
                         <a href="#none">GitHub</a>
                     </div>
-                    <ul class="main-menu">
+                    <ul class="main-menu toggle">
                         <li><a href="#none">Personal</a></li>
                         <li><a href="#none">Open source</a></li>
                         <li><a href="#none">Business</a></li>
@@ -63,7 +66,7 @@
                     </ul>
                 </div>
 
-                <div class="sign-group float--right">
+                <div class="sign-group float--right toggle">
                     <div class="btn-group">
                         <a href="#none" class="btn sign-in">Sign in</a>
                         <a href="#none" class="btn btn--primary sign-up">Sign up</a>
@@ -78,6 +81,8 @@
                         <li><a href="#none">Support</a></li>
                     </ul>
                 </div>
+
+                <div id="toggle-btn">Header Menu Toggle Button</div>
             </div>
         </header>
 
@@ -268,6 +273,8 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"
         async defer></script>
+    <script src="main.js"></script>
+    
 </body>
 
 </html>
